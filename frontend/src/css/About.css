@@ -1,0 +1,105 @@
+.about-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+  background-color: #e8e4e6; /* Illustration: main */
+  color: #001e1d;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #001e1d; /* Illustration: stroke */
+}
+
+.about-content h1 {
+  color: #fffffe; /* Headline */
+  margin-bottom: 20px;
+  background-color: #004643; /* Background untuk kontras */
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 2px solid #001e1d; /* Illustration: stroke */
+}
+
+.about-content h2 {
+  color: #001e1d; /* Illustration: stroke */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f9bc60; /* Illustration: highlight */
+  font-weight: bold;
+}
+
+.about-content p {
+  color: #001e1d; /* Ubah ke warna yang lebih kontras */
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.about-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-content li {
+  color: #001e1d; /* Ubah ke warna yang lebih kontras */
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-content li::before {
+  position: absolute;
+  left: 0;
+  color: #f9bc60; /* Illustration: highlight */
+  font-weight: bold;
+}
+
+/* Button styling (jika diperlukan) */
+.about-button {
+  background-color: #f9bc60; /* Button */
+  color: #001e1d; /* Button Text */
+  padding: 12px 24px;
+  border: 2px solid #001e1d; /* Illustration: stroke */
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #abd1c6; /* Illustration: secondary */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary elements styling */
+.about-secondary {
+  background-color: #abd1c6; /* Illustration: secondary */
+  color: #001e1d; /* Warna teks yang kontras */
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #001e1d; /* Illustration: stroke */
+  margin: 20px 0;
+}
+
+/* Tertiary elements styling */
+.about-tertiary {
+  background-color: #e16162; /* Illustration: tertiary */
+  color: #fffffe; /* Headline */
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #001e1d; /* Illustration: stroke */
+  display: inline-block;
+  margin: 5px 0;
+}
+
+/* Highlight text */
+.highlight-text {
+  color: #f9bc60; /* Illustration: highlight */
+  font-weight: bold;
+}
