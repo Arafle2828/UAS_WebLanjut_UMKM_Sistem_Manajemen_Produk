@@ -1,0 +1,399 @@
+/* DashboardKasir.css */
+.dashboard-kasir-container {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.dashboard-kasir-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #e8e4e6;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 30, 29, 0.2);
+}
+
+.dashboard-kasir-title {
+  color: #fffffe;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #004643;
+  padding: 20px;
+  border-radius: 8px;
+  margin: -30px -30px 30px -30px;
+  text-shadow: 2px 2px 4px rgba(0, 30, 29, 0.8);
+  border: 3px solid #abd1c6;
+  box-shadow: 
+    0 4px 15px rgba(0, 30, 29, 0.3),
+    inset 0 1px 0 rgba(255, 255, 254, 0.1);
+}
+
+.dashboard-kasir-message {
+  color: #abd1c6;
+  background-color: #004643;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  border: 2px solid #abd1c6;
+}
+
+.dashboard-kasir-section {
+  margin-bottom: 30px;
+}
+
+.dashboard-kasir-section-title {
+  color: #004643;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f9bc60;
+}
+
+/* Produk List Styling */
+.dashboard-kasir-produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.dashboard-kasir-produk-item {
+  background-color: #fffffe;
+  border: 2px solid #abd1c6;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  min-height: 280px;
+}
+
+.dashboard-kasir-produk-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain !important;
+  object-position: center;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.dashboard-kasir-produk-item:hover {
+  border-color: #f9bc60;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 188, 96, 0.2);
+}
+
+.dashboard-kasir-produk-info {
+  color: #001e1d;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.dashboard-kasir-produk-nama {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.dashboard-kasir-produk-harga {
+  color: #004643;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dashboard-kasir-add-button {
+  background-color: #f9bc60;
+  color: #001e1d;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.dashboard-kasir-add-button:hover {
+  background-color: #e8a54a;
+  transform: scale(1.05);
+}
+
+/* Keranjang Styling */
+.dashboard-kasir-keranjang {
+  background-color: #fffffe;
+  border: 2px solid #abd1c6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-kasir-keranjang-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-kasir-keranjang-item {
+  background-color: #e8e4e6;
+  border: 1px solid #abd1c6;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  color: #001e1d;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-kasir-keranjang-item:last-child {
+  margin-bottom: 0;
+}
+
+.dashboard-kasir-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.dashboard-kasir-item-info span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dashboard-kasir-jumlah {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashboard-kasir-jumlah button {
+  background-color: #f9bc60;
+  color: #001e1d;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-kasir-jumlah button:hover {
+  background-color: #e8a54a;
+  transform: scale(1.1);
+}
+
+.dashboard-kasir-jumlah span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #004643;
+  min-width: 40px;
+  text-align: center;
+}
+
+.dashboard-kasir-subtotal {
+  font-size: 16px;
+  font-weight: bold;
+  color: #004643;
+}
+
+/* Stok Button Styling */
+.dashboard-kasir-stok-button {
+  background-color: #abd1c6;
+  color: #001e1d;
+  border: 2px solid #abd1c6;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.dashboard-kasir-stok-button:hover {
+  background-color: #f9bc60;
+  border-color: #f9bc60;
+  transform: scale(1.05);
+}
+
+.dashboard-kasir-stok-button.low-stock {
+  background-color: #e16162;
+  border-color: #e16162;
+  color: #fffffe;
+}
+
+.dashboard-kasir-stok-button.out-of-stock {
+  background-color: #001e1d;
+  border-color: #001e1d;
+  color: #fffffe;
+  cursor: not-allowed;
+}
+
+.dashboard-kasir-stok-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.dashboard-kasir-keranjang-empty {
+  text-align: center;
+  color: #abd1c6;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Total Section */
+.dashboard-kasir-total {
+  background-color: #004643;
+  color: #fffffe;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Payment Method Styling */
+.dashboard-kasir-payment-section {
+  background-color: #fffffe;
+  border: 2px solid #abd1c6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-kasir-select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #abd1c6;
+  border-radius: 6px;
+  background-color: #fffffe;
+  color: #001e1d;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.dashboard-kasir-select:focus {
+  outline: none;
+  border-color: #f9bc60;
+  box-shadow: 0 0 0 3px rgba(249, 188, 96, 0.2);
+}
+
+/* Submit Button */
+.dashboard-kasir-submit-button {
+  background-color: #f9bc60;
+  color: #001e1d;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.dashboard-kasir-submit-button:hover {
+  background-color: #e8a54a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 188, 96, 0.3);
+}
+
+.dashboard-kasir-submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(249, 188, 96, 0.2);
+}
+
+.dashboard-kasir-submit-button:disabled {
+  background-color: #abd1c6;
+  color: #004643;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-kasir-wrapper {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .dashboard-kasir-title {
+    font-size: 24px;
+    margin: -20px -20px 20px -20px;
+    text-shadow: 1px 1px 3px rgba(0, 30, 29, 0.8);
+    border-width: 2px;
+  }
+  
+  .dashboard-kasir-produk-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-kasir-keranjang-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .dashboard-kasir-subtotal {
+    align-self: flex-end;
+  }
+  
+  .dashboard-kasir-jumlah {
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-kasir-stok-button {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+
+.popup-success {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9bc60;
+  color: #001e1d;
+  border: 2px solid #001e1d;
+  padding: 14px 24px;
+  border-radius: 12px;
+  z-index: 9999;
+  font-weight: bold;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeInZoom 0.3s ease-out;
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
