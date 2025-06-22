@@ -1,0 +1,109 @@
+/* ManageKasir.css */
+.manage-kasir-container {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.manage-kasir-form-wrapper {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #e8e4e6;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 30, 29, 0.2);
+}
+
+.manage-kasir-title {
+  color: #fffffe;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #004643;
+  padding: 15px;
+  border-radius: 8px;
+  margin: -30px -30px 25px -30px;
+}
+
+.manage-kasir-message {
+  color: #abd1c6;
+  background-color: #004643;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  border: 2px solid #abd1c6;
+}
+
+.manage-kasir-message.error {
+  color: #e16162;
+  border-color: #e16162;
+  background-color: #fffffe;
+}
+
+.manage-kasir-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.manage-kasir-input {
+  padding: 12px 15px;
+  border: 2px solid #abd1c6;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fffffe;
+  color: #001e1d;
+  transition: all 0.3s ease;
+}
+
+.manage-kasir-input:focus {
+  outline: none;
+  border-color: #f9bc60;
+  box-shadow: 0 0 0 3px rgba(249, 188, 96, 0.2);
+  background-color: #fffffe;
+}
+
+.manage-kasir-input::placeholder {
+  color: #abd1c6;
+  font-weight: 400;
+}
+
+.manage-kasir-button {
+  background-color: #f9bc60;
+  color: #001e1d;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.manage-kasir-button:hover {
+  background-color: #e8a54a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 188, 96, 0.3);
+}
+
+.manage-kasir-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(249, 188, 96, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .manage-kasir-form-wrapper {
+    margin: 20px;
+    padding: 20px;
+    max-width: none;
+  }
+  
+  .manage-kasir-title {
+    font-size: 20px;
+    margin: -20px -20px 20px -20px;
+  }
+}
