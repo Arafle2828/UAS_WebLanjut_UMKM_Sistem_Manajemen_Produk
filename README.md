@@ -249,21 +249,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-### `Konfigurasi .env ` Bapak bisa gunakan .env.example
-
-# Server Configuration
-PORT=5000
-
-# Database Configuration
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_database_password
-DB_NAME=multi_umkm_db
-
-# JWT Configuration
-JWT_SECRET=your_jwt_secret_key
-
-# Note: Ini hanya untuk contoh .env saja. Bapak bisa import syntax sql ke phpMyAdmin supaya memudahkan.
-# Please copy this file to .env and update the values according to your local environment.
